@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Meu Portfólio Pessoal</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+      /* Animações personalizadas */
+      .form-group input, .form-group select, .form-group textarea {
+        transition: all 0.3s ease-in-out;
+      }
+      .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-dark text-white p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h1>Meu Portfólio</h1>
+          </div>
+          <div class="col-12 col-md-6 text-md-right">
+            <nav>
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#sobre">Sobre Mim</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#contato">Contato</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="bg-light p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img src="./img/kaufoto2.jpg" alt="Minha foto" class="img-fluid rounded-circle">
+          </div>
+          <div class="col-12 col-md-8">
+            <h2>Quem é a Kau?</h2>
+            <p>Sou apaixonada por tecnologia e design. Com experiência em diversas tecnologias, sempre busco aprender e me aperfeiçoar para criar soluções inovadoras e de alta qualidade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Sobre mim</h2>
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card">
+              <img src="./img/kaunaempresa.jpeg" class="card-img-top" alt="Projeto 1">
+              <div class="card-body">
+                <h5 class="card-title">Eventos</h5>
+                <p class="card-text">Amo ir em workshops, palestras, eventos de tecnologia e participei do IEL Summit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-0 col-md-4 mb-0">
+            <div class="card">
+              <img src="./img/kausegundo.jpeg" class="card-img-top" alt="Projeto 2">
+              <div class="card-body">
+                <h5 class="card-title">Estudos</h5>
+                <p class="card-text">Esse foi o meu projeto de um blog de tênis, para quem ama estar por dentro de tudo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card">
+              <img src="./img/kauterceiro.jpeg" class="card-img-top" alt="Projeto 3">
+              <div class="card-body">
+                <h5 class="card-title">Conhecimento</h5>
+                <p class="card-text">Adoro andar com pessoas que tenham algo para me ensinar da experiência deles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="bg-light p-5" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-4">Entre em Contato</h2>
+        
+        <!-- Aviso de sucesso ou erro -->
+        <div id="aviso" class="alert d-none" role="alert"></div>
+
+        <form id="formContato">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Seu email" required>
+          </div>
+          <div class="form-group">
+            <label for="assunto">Assunto</label>
+            <select class="form-control" id="assunto" required>
+              <option>Selecione um assunto</option>
+              <option>Projetos</option>
+              <option>Consultoria</option>
+              <option>Outros</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS e AOS JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      // Inicializar animações AOS
+      AOS.init();
+
+      // Função de validação e envio do formulário
+      $('#formContato').on('submit', function(e) {
+        e.preventDefault();
+
+        // Obtendo os valores dos campos
+        var nome = $('#nome').val();
+        var email = $('#email').val();
+        var assunto = $('#assunto').val();
+        var mensagem = $('#mensagem').val();
+
+        // Validação simples
+        if (nome === "" || email === "" || assunto === "Selecione um assunto" || mensagem === "") {
+          // Exibe aviso de erro
+          $('#aviso').removeClass('d-none').addClass('alert-danger').text("Todos os campos são obrigatórios.");
+        } else if (!validateEmail(email)) {
+          // Exibe aviso de erro no email
+          $('#aviso').removeClass('d-none').addClass('alert-danger').text("Por favor, insira um email válido.");
+        } else {
+          // Exibe aviso de sucesso
+          $('#aviso').removeClass('d-none').addClass('alert-success').text("Mensagem enviada com sucesso! Em breve entraremos em contato.");
+          // Limpa o formulário
+          $('#formContato')[0].reset();
+        }
+      });
+
+      // Função para validar o formato de email
+      function validateEmail(email) {
+        var re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return re.test(email);
+      }
+    </script>
+
+  </body>
+</html>
